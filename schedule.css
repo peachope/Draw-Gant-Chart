@@ -1,0 +1,243 @@
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+.row .col-1 {
+  width: 7.14286%;
+}
+
+.row .col-2 {
+  width: 14.28571%;
+}
+
+.row .col-3 {
+  width: 21.42857%;
+}
+
+.row .col-4 {
+  width: 28.57143%;
+}
+
+.row .col-5 {
+  width: 35.71429%;
+}
+
+.row .col-6 {
+  width: 42.85714%;
+}
+
+.row .col-7 {
+  width: 50%;
+}
+
+.row .col-8 {
+  width: 57.14286%;
+}
+
+.row .col-9 {
+  width: 64.28571%;
+}
+
+.row .col-10 {
+  width: 71.42857%;
+}
+
+.row .col-11 {
+  width: 78.57143%;
+}
+
+.row .col-12 {
+  width: 85.71429%;
+}
+
+.row .col-13 {
+  width: 92.85714%;
+}
+
+.row .col-14 {
+  width: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container .wrapper {
+  width: 1000px;
+  height: 600px;
+  position: relative;
+}
+
+.container .wrapper .row {
+  height: 100%;
+}
+
+.container .wrapper .row .col-2 {
+  border-right: 1px solid #333;
+  height: 100%;
+}
+
+.container .wrapper .row .col-2:last-child {
+  border: none;
+}
+
+.container .wrapper .row .col-2 p {
+  font-weight: 700;
+  text-align: center;
+}
+
+.container .wrapper .grid-blocks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 10px;
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[14];
+      grid-template-columns: repeat(14, 1fr);
+  z-index: 9;
+}
+
+.container .wrapper .grid-blocks .red {
+  background: red;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: 4 / 1 / 4 / 5;
+  border-radius: 25px;
+}
+
+.container .wrapper .grid-blocks .red p {
+  color: white;
+  padding-left: 20px;
+}
+
+.container .wrapper .grid-blocks .blue {
+  background: #36A7A4;
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 12;
+  grid-area: 5 / 3 / 5 / 15;
+  border-radius: 25px;
+}
+
+.container .wrapper .grid-blocks .blue p {
+  color: white;
+  padding-left: 20px;
+}
+
+.container .wrapper .grid-blocks .blue-1 {
+  background: #3A9C7F;
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: 6 / 1 / 6 / 6;
+  border-radius: 25px;
+}
+
+.container .wrapper .grid-blocks .blue-1 p {
+  color: white;
+  padding-left: 20px;
+}
+
+.container .wrapper .grid-blocks .violet {
+  background: #6A478D;
+  -ms-grid-row: 7;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 3;
+  grid-area: 7 / 6 / 7 / 9;
+  border-radius: 25px;
+}
+
+.container .wrapper .grid-blocks .violet p {
+  color: white;
+  padding-left: 20px;
+}
+
+.container .wrapper .grid-blocks .orange {
+  background: #D97136;
+  -ms-grid-row: 8;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 3;
+  grid-area: 8 / 3 / 8 / 6;
+  border-radius: 25px;
+}
+
+.container .wrapper .grid-blocks .orange p {
+  color: white;
+  padding-left: 20px;
+}
+
+.container .wrapper .grid-blocks .blue-2 {
+  background: #3F8AAF;
+  -ms-grid-row: 9;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 6;
+  grid-area: 9 / 4 / 9 / 10;
+  border-radius: 25px;
+}
+
+.container .wrapper .grid-blocks .blue-2 p {
+  color: white;
+  padding-left: 20px;
+}
+
+.container .wrapper .grid-blocks .red-2 {
+  background: #DF4545;
+  -ms-grid-row: 10;
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 10;
+  grid-area: 10 / 6 / 10 / 16;
+  border-radius: 25px;
+}
+
+.container .wrapper .grid-blocks .red-2 p {
+  color: white;
+  padding-left: 20px;
+}
+
+.container .wrapper .grid-blocks .green {
+  background: #5AA530;
+  -ms-grid-row: 11;
+  -ms-grid-column: 8;
+  -ms-grid-column-span: 1;
+  grid-area: 11 / 8 / 11 / 9;
+  border-radius: 25px;
+}
+
+.container .wrapper .grid-blocks .green p {
+  color: white;
+  padding-left: 20px;
+}
+
+.container .wrapper .grid-blocks .sky {
+  background: #45639F;
+  -ms-grid-row: 12;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 7;
+  grid-area: 12 / 9 / 12 / 16;
+  border-radius: 25px;
+}
+
+.container .wrapper .grid-blocks .sky p {
+  color: white;
+  padding-left: 20px;
+}
+/*# sourceMappingURL=schedule.css.map */
